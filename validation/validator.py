@@ -131,11 +131,11 @@ def confidence_label(score: float) -> str:
     Returns:
         String label: High / Medium / Low / Very Low
     """
-    if score >= 0.85:
+    if score >= 0.75:
         return "🟢 High"
-    elif score >= 0.75:
+    elif score >= 0.65:
         return "🟡 Medium"
-    elif score >= 0.50:
+    elif score >= 0.55:
         return "🟠 Low"
     else:
         return "🔴 Very Low"
