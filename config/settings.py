@@ -43,7 +43,7 @@ MAX_TOKENS = 1024
 # Hyperparameter: cosine similarity threshold below which SME escalation triggers.
 # Range: 0.0 (escalate everything) to 1.0 (never escalate).
 # Default 0.75 — tune based on observed retrieval quality.
-CONFIDENCE_THRESHOLD = float(os.getenv("CONFIDENCE_THRESHOLD", "0.75"))
+CONFIDENCE_THRESHOLD = float(os.getenv("CONFIDENCE_THRESHOLD", "0.60"))
 
 # Minimum number of retrieved chunks required to attempt an answer
 MIN_CHUNKS_REQUIRED = 1
